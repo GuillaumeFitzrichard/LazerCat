@@ -1,6 +1,13 @@
 #include <Servo.h>
 
-/* YOU CAN CUSTOM THESE VARIABLES IF YOU WANT TO ALTER THE TOWER BEHAVIOUR */
+/* YOU CAN CUSTOM THESE VARIABLES IF YOU WANT TO ALTER THE TOWER BEHAVIOUR 
+echo 2
+trig 4
+tilt 6
+pan 9
+lazer 13
+balloon 27
+*/
 
 // X servo angle will stay in [min_x, max_x] range
 // Y servo angle will stay in [min_y, max_y] range
