@@ -47,5 +47,5 @@ void loop() {
   Ypos = map(Ypos,0,1023,0,180);  //map the analog read y values to the 0-180 servo values
   xservo.write(Xpos);             // move the X Location servo to the x position the joystick is at
   yservo.write(Ypos);             // move the Y Location servo to the y position the joystick is at
-  delay(50);                      // add in a slight delay to help with "jittering"
+  delay(20);                      // add in a slight delay to help with "jittering"
 }
