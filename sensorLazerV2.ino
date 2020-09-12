@@ -76,11 +76,11 @@ void loop() {
   Serial.print(distance);
   Serial.println(" cm");
   
- if (distance >= spazRange) {
-  sensorUnengage(); 
- } else  if (distance > 0 && distance <= spazRange){
-  sensorEngage();
- }
+  if (distance >= spazRange) {
+    sensorUnengage(); 
+  } else  if (distance > 0 && distance <= spazRange){
+    sensorEngage();
+  }
 }
 
 void randDelay(int time) {
@@ -130,34 +130,34 @@ void sensorEngage() {
   Serial.print(distance);
   Serial.println(" cm");
   
-    servoXSpeed = random(100, 200);
-    servoYSpeed = random(100, 200);
-    minimal_movement = random(10);
-  
-    if( (y_new_position > y_old_position) && (abs(y_new_position - y_old_position) < 5 )) {
-      y_new_position = y_new_position + minimal_movement;
-    }  else if ( (y_new_position < y_old_position) && (abs(y_new_position - y_old_position) < 5 )) {
-      y_new_position = y_new_position - minimal_movement;
-    }
-  
-    if( (x_new_position > x_old_position) && (abs(x_new_position - x_old_position) < 5 )) {
-      x_new_position = x_new_position + minimal_movement;
-    }  else if ( (x_new_position < x_old_position) && (abs(x_new_position - x_old_position) < 5 )) {
-      x_new_position = x_new_position - minimal_movement;
-    }
+  servoXSpeed = random(100, 200);
+  servoYSpeed = random(100, 200);
+  minimal_movement = random(10);
 
-    x_speed = (x_new_position - x_old_position)/5;
-    y_speed = (y_new_position - y_old_position)/5;  
-    for (pos = 0; pos < 5; pos += 1) { 
-      x_position = x_position + x_speed;
-      y_position = y_position + y_speed;
-      x_servo.write(x_position, servoXSpeed);  
-      y_servo.write(y_position, servoYSpeed);                    
-      delay(10);
-    }
-    x_old_position = x_new_position;
-    y_old_position = y_new_position;
+  if( (y_new_position > y_old_position) && (abs(y_new_position - y_old_position) < 5 )) {
+    y_new_position = y_new_position + minimal_movement;
+  }  else if ( (y_new_position < y_old_position) && (abs(y_new_position - y_old_position) < 5 )) {
+    y_new_position = y_new_position - minimal_movement;
+  }
+
+  if( (x_new_position > x_old_position) && (abs(x_new_position - x_old_position) < 5 )) {
+    x_new_position = x_new_position + minimal_movement;
+  }  else if ( (x_new_position < x_old_position) && (abs(x_new_position - x_old_position) < 5 )) {
+    x_new_position = x_new_position - minimal_movement;
+  }
+
+  x_speed = (x_new_position - x_old_position)/5;
+  y_speed = (y_new_position - y_old_position)/5;  
+  for (pos = 0; pos < 5; pos += 1) { 
+    x_position = x_position + x_speed;
+    y_position = y_position + y_speed;
+    x_servo.write(x_position, servoXSpeed);  
+    y_servo.write(y_position, servoYSpeed);                    
     delay(10);
+  }
+  x_old_position = x_new_position;
+  y_old_position = y_new_position;
+  delay(10);
   
 }
 
@@ -201,20 +201,21 @@ void sensorUnengage() {
   x_speed = (x_new_position - x_old_position)/movement_time;
   y_speed = (y_new_position - y_old_position)/movement_time;  
   for (pos = 0; pos < movement_time; pos += 1) {
-      digitalWrite (13, HIGH); 
-      x_position = x_position + x_speed;
-      y_position = y_position + y_speed;
-      x_servo.write(x_position, servoXSpeed);  
-      y_servo.write(y_position, servoYSpeed); 
-      if (servoXSpeed < 40 || servoYSpeed < 40) {
-        digitalWrite (13, LOW); 
-      }                   
-      delay(10); 
-  }
+    digitalWrite (13, HIGH); 
+    x_position = x_position + x_speed;
+    y_position = y_position + y_speed;
+    x_servo.write(x_position, servoXSpeed);  
+    y_servo.write(y_position, servoYSpeed); 
+    if (servoXSpeed < 40 || servoYSpeed < 40) {
+      digitalWrite (13, LOW); 
+    }                   
+    delay(10);
+  } 
+
   
   x_old_position = x_new_position;
   y_old_position = y_new_position;
   digitalWrite (13, HIGH);
   randDelay(random_delay);
-  }
+}
 
