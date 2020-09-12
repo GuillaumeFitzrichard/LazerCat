@@ -15,8 +15,8 @@ balloon 27
 #define trigPin 4
 #define echoPin 2
 float min_x = 50;
-float max_x = 150;
-float min_y = 20;
+float max_x = 180;
+float min_y = 0;
 float max_y = 55;
 int min_freeze = 200;
 int max_freeze = 3000;
