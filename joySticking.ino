@@ -16,7 +16,7 @@ int buttonPress = 0;
 int lazerPin = 6;
 
 void setup() {
-  pinMode(lazerPin,OUTPUT);      //The lazer will be an output
+  pinMode(lazerPin,OUTPUT);      
   pinMode(buttonPin,INPUT);      //The buttonpress pin is an input
   digitalWrite(buttonPin,HIGH);  //This enables the Arduino pullup for this pin
   

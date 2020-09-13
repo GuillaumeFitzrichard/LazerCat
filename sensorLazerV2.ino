@@ -11,7 +11,7 @@ balloon 27
 
 // X servo angle will stay in [min_x, max_x] range
 // Y servo angle will stay in [min_y, max_y] range
-// to be ajsuted to the size of your living room
+// to be adjusted to the size of your living room
 #define trigPin 4
 #define echoPin 2
 float min_x = 75;
