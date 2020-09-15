@@ -17,11 +17,10 @@ int lazerPin = 6;
 
 void setup() {
   pinMode(lazerPin,OUTPUT);      
-  pinMode(buttonPin,INPUT);      //The buttonpress pin is an input
-  digitalWrite(buttonPin,HIGH);  //This enables the Arduino pullup for this pin
-  
-  xservo.attach(XServoPin);  // attaches the servo on pin 9 to the servo object
-  yservo.attach(YServoPin);  // attaches the servo on pin 8 to the servo object
+  pinMode(buttonPin,INPUT);      
+  digitalWrite(buttonPin,HIGH);  
+  xservo.attach(XServoPin);  
+  yservo.attach(YServoPin);  
 }
 
 void loop() {
