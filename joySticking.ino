@@ -1,13 +1,13 @@
 #include <Servo.h> // Include the Servo Library to control the servos
-Servo xservo; // create servo object to control the x direction servo
-Servo yservo; // create servo object to control the y direction servo
+Servo xservo; // c
+Servo yservo; // o
 //Servo Variables
 int pos = 0;       // variable to store the servo position
 int XServoPin = 9; // Servo pin that will control X motion
 int YServoPin = 8; // Servo pin that will control Y motion
 //Joystick variables
-int xposPin = A0;    // select the input pin for the potentiometer
-int yposPin = A1;    // select the input pin for the potentiometer
+int xposPin = A0;    // 
+int yposPin = A1;    // 
 int Xpos = 0;
 int Ypos = 0;
 int buttonPin = 7;
