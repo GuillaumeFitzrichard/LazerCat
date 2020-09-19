@@ -2,9 +2,9 @@
 Servo xservo; // c
 Servo yservo; // o
 //Servo Variables
-int pos = 0;       // variable to store the servo position
-int XServoPin = 9; // Servo pin that will control X motion
-int YServoPin = 8; // Servo pin that will control Y motion
+int pos = 0;       
+int XServoPin = 9; 
+int YServoPin = 8; 
 //Joystick variables
 int xposPin = A0;    // 
 int yposPin = A1;    // 
