@@ -1,4 +1,4 @@
-#include <Servo.h> // Include the Servo Library to control the servos
+#include <Servo.h> 
 Servo xservo; // c
 Servo yservo; // o
 //Servo Variables
