@@ -34,11 +34,6 @@ void loop() {
     digitalWrite(lazerPin, LOW); // If it is not pressed, keep lazer off
   }
 
-//*****************************************************************\\
-//*****************************************************************\\
-//                          STEP FOUR
-//*****************************************************************\\
-//*****************************************************************\\
 
   Xpos = analogRead(xposPin);     // read and store the x position location of the joystick
   Xpos = map(Xpos,0,1023,0,180);  //map the analog read x values to the 0-180 servo values
