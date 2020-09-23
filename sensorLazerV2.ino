@@ -51,12 +51,12 @@ void setup() {
   Serial.begin (19200);
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
-  y_servo.attach(6);  // attaches the y servo on pin 6 to the servo object
-  x_servo.attach(9);  // attaches the x servo on pin 9 to the servo object
+  y_servo.attach(6); 
+  x_servo.attach(9);  
   pinMode (13, OUTPUT);
-  digitalWrite (13, HIGH);  // switch on  the laser
+  digitalWrite (13, HIGH);  
   
-  //Place the servos in the center at the beginning 
+  
   y_servo.write(y_position, servoYSpeed); 
   x_servo.write(x_position, servoXSpeed);     
 
