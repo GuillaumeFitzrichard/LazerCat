@@ -1,0 +1,104 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+clearfixe above
+*/
+
+/* html body {
+  display: grid;
+  margin: 0 auto;
+} */
+
+
+body {
+  overflow: hidden;
+  background-image: url(https://cdn3.vectorstock.com/i/1000x1000/02/72/cat-head-seamless-pattern-halloween-vector-26760272.jpg);
+  background-size: cover;
+  font-family: "Graphik Webfont" ,-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif !important;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 25px;
+  -webkit-font-smoothing: antialiased !important;
+}
+button {
+  background-color: white;
+  border-radius: 15px;
+}
+#header{
+  margin: 2px;
+  margin-left: 33%;
+  margin-right: 33%;
+  padding-bottom: 2px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+
+}
+#buffer {
+  height: 10px;
+}
+
+#title {
+  margin: 15px;
+  height: fit-content;
+  max-width: 100%;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 600;
+  background-color: white;
+  border-radius: 10px;
+}
+.AddProductForm {
+  background-color: white;
+}
+
+#footer {
+  background-color: white;
+  margin-left: 50px;
+  margin-top: 400px;
+  font-size: 10px;
+  text-align: left;
+}
