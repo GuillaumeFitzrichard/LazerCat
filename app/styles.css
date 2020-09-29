@@ -54,7 +54,6 @@ clearfixe above
 
 body {
   overflow: hidden;
-  background-image: url(https://cdn3.vectorstock.com/i/1000x1000/02/72/cat-head-seamless-pattern-halloween-vector-26760272.jpg);
   background-size: cover;
   font-family: "Graphik Webfont" ,-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif !important;
   font-size: 20px;
@@ -91,9 +90,7 @@ button {
   background-color: white;
   border-radius: 10px;
 }
-.AddProductForm {
-  background-color: white;
-}
+
 
 #footer {
   background-color: white;
